@@ -282,10 +282,9 @@ function loadLiveStatus() {
         indicator.classList.add('red');
     }
 
-    const now = new Date();
-    const formattedTime = now.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' });
-    document.getElementById('statusLastUpdated').textContent = formattedTime;
-}
+const lastUpdated = new Date(data.lastUpdated);
+const formattedTime = lastUpdated.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' });
+document.getElementById('statusLastUpdated').textContent = formattedTime;
 
 document.addEventListener('DOMContentLoaded', () => {
     loadLiveStatus();
