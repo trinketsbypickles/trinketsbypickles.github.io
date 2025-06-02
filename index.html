@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinkets by Pickles</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo2.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Pickles Logo" class="logo">
+        <h1>Trinkets by Pickles</h1>
+    </header>
+
+    <nav>
+        <a href="#home" onclick="showPage('home')">Home</a>
+        <a href="#findme" onclick="showPage('findme')">Find Me</a>
+        <a href="#about" onclick="showPage('about')">About</a>
+    </nav>
+
+    <main>
+        <section id="home" class="page">
+            <h2>Welcome!</h2>
+            <p>Hi, I’m Pickles! I create small-batch trinkets and handmade delights. I create things like quirky earrings, stickers, buttons, and so much more. Browse through my creations and find out which local markets I’ll be at next — I’d love to meet you!</p>
+            <br>
+            <p>Currently I only sell in person! You can find out where I'll be next here -> <a href="#findme" onclick="showPage('findme')">Find Me</a></p>
+            <!-- Filter Buttons -->
+            <div class="filters">
+                <button onclick="filterProducts('all')">All</button>
+                <button onclick="filterProducts('stickers')">Stickers</button>
+                <button onclick="filterProducts('charms')">Earrings & Charms</button>
+                <button onclick="filterProducts('buttons')">Buttons/Pins</button>
+                <button onclick="filterProducts('prints')">Prints</button>
+                <button onclick="filterProducts('totes')">Tote Bags</button>
+                <!-- <button onclick="filterProducts('others')">Others</button> -->
+            </div>
+
+            <!-- Product Gallery -->
+            <div class="gallery" id="productGallery"></div>
+        </section>
+
+        <section id="findme" class="page" style="display:none;">
+            <h2>Where to Find Me</h2>
+            <div>🐮 Davis Street Market - Every Saturday from 10a-3p* <br>3rd & B st Davis, CA </div>
+            <p>*When weather is good. I won't be out if: raining, too windy, or too hot (over 105°F)</p>
+            <p>Set up time is 8:30, I will often be finished by 9 if you want to come by earlier. I often pack up early depending on sales. It can range from 1-2pm. If you're trying to get to my stall and are worried about the time I will leave, you can message me on Instagram!</p>
+
+            <p>I do NOT accept credit cards. I am a very small business and like to keep things as simple as possible. I prefer cash (and can break down any bills and give change) but also take Venmo or Zelle if needed.</p>
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto: trinketsbypickles@gmail.com">trinketsbypickles@gmail.com</a></p>
+            <p>Instagram: <a href="https://instagram.com/trinketsbypickles" target="_blank">@trinketsbypickles</a></p>
+        </section>
+
+        <section id="about" class="page about-section" style="display:none;">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about-photo.jpeg" alt="About Pickles">
+                </div>
+                <div class="about-text">
+                    <h2>About Trinkets by Pickles</h2>
+                    <p>Hi! I’m Pickles, the heart and hands behind every trinket you see here. I am an artist and interactive design graduate student who happens to be a big ecology nerd. On the weekdays I work on finding ways to make reserved land and park spaces more interactive, accessible, and engaging. On the weekends I create small-batch trinkets and handmade delights. I create things like quirky earrings, stickers, buttons, and so much more.Inspired by nature, whimsy, and the joy of making, I handcraft each piece to bring a little happiness into your day. From markets to craft fairs, I love sharing these treasures with my community. Thanks for stopping by!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Product Image">
+            <div class="lightbox-details">
+                <h3 id="lightboxName"></h3>
+                <p id="lightboxPrice"></p>
+                <p id="lightboxDescription"></p>
+            </div>
+        </div>
+    </div>
+
+
+<footer>
+    <div class="social-links">
+        <a href="https://instagram.com/trinketsbypickles" target="_blank"><i class="fab fa-instagram"></i></a>
+        <!-- <a href="https://tiktok.com/@trinketsbypickles" target="_blank"><i class="fab fa-tiktok"></i></a> -->
+    </div>
+    <p>🌿 handmade with love in california</p>
+    <p>✧.*｡⋆ site made from scratch with HTML/CSS/JS and Github ✧.*｡⋆</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
