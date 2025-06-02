@@ -31,7 +31,7 @@ const products = [
         name: 'Fish Stickers', 
         category: 'stickers',
         price: '$2 each or buy 3 get one free', 
-        description: 'My most popular stickers and first designs ever from when I used to sell on a TV stand table. They ahve changed a bit since the orginal prints and are now plain glossy. Waterproof and made in small batches with a cricut', 
+        description: 'My most popular stickers and first designs ever from when I used to sell on a TV dinnert tray. They have changed a bit since the orginal prints and are now plain glossy. Waterproof and made in small batches with a cricut', 
         img: 'images/fishsticker.jpeg' 
     },
     { 
