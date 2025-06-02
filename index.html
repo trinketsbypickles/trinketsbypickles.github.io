@@ -23,17 +23,17 @@
     <main>
         <section id="home" class="page">
             <h2>Welcome!</h2>
-            <p>Hi, I’m Pickles! I create small-batch trinkets and handmade delights. I create things like quirky earrings, stickers, buttons, and so much more. Browse through my creations and find out which local markets I’ll be at next! I’d love to meet you!</p>
+            <p>Hi, I’m Pickles! I create small-batch trinkets and handmade delights. I create things like quirky earrings, stickers, buttons, and so much more. Browse through my creations and find out which local markets I’ll be at next — I’d love to meet you!</p>
             <br>
             <p>Currently I only sell in person! You can find out where I'll be next here -> <a href="#findme" onclick="showPage('findme')">Find Me</a></p>
             <!-- Filter Buttons -->
             <div class="filters">
-                <button onclick="filterProducts('all')">All</button>
-                <button onclick="filterProducts('stickers')">Stickers</button>
-                <button onclick="filterProducts('charms')">Earrings & Charms</button>
-                <button onclick="filterProducts('buttons')">Buttons/Pins</button>
-                <button onclick="filterProducts('prints')">Prints</button>
-                <button onclick="filterProducts('totes')">Tote Bags</button>
+                <button class="filter-btn" onclick="filterProducts('all', this)">All</button>
+                <button class="filter-btn" onclick="filterProducts('stickers', this)">Stickers</button>
+                <button class="filter-btn" onclick="filterProducts('charms', this)">Earrings & Charms</button>
+                <button class="filter-btn" onclick="filterProducts('buttons', this)">Buttons/Pins</button>
+                <button class="filter-btn" onclick="filterProducts('prints', this)">Prints</button>
+                <button class="filter-btn" onclick="filterProducts('tote bags', this)">Tote Bags</button>
                 <!-- <button onclick="filterProducts('others')">Others</button> -->
             </div>
 
