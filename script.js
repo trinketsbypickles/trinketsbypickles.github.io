@@ -267,7 +267,7 @@ nav a:hover {
 }
 
 .status-indicator.orange {
-    background-color: #ff9800; /* yellow-orange */
+    background-color: #fbda22; /* yellow-orange */
     animation: pulse 1.5s infinite;
 }
 
