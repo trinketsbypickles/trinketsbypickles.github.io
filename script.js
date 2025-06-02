@@ -262,6 +262,37 @@ document.getElementById('lightbox').addEventListener('click', function(e) {
     }
 });
 
+function loadLiveStatus() {
+    const data = liveStatus;
+
+    document.getElementById('statusLocation').textContent = data.location;
+    document.getElementById('statusSetup').textContent = data.status;
+    document.getElementById('statusMessage').textContent = data.message;
+
+    const indicator = document.getElementById('statusIndicator');
+    indicator.classList.remove('green', 'red', 'orange');
+
+    const status = data.status.toLowerCase();
+
+    if (status === 'selling' || status === 'open') {
+        indicator.classList.add('green');
+    } else if (status === 'setting up' || status === 'setup') {
+        indicator.classList.add('orange');
+    } else {
+        indicator.classList.add('red');
+    }
+
+    const now = new Date();
+    const formattedTime = now.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' });
+    document.getElementById('statusLastUpdated').textContent = formattedTime;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadLiveStatus();
+    // Add any additional initializations here
+});
+
+
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
     showPage('home');
