@@ -34,5 +34,5 @@
 const liveStatus = {
     location: "Currently Closed",
     status: "Off",
-    message: "Thanks for stopping over the weekend! Prepping for the next Saturday market! 🌻"
+    message: "Thanks for stopping by over the weekend! 🌻"
 };
