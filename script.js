@@ -263,14 +263,14 @@ document.getElementById('lightbox').addEventListener('click', function(e) {
 });
 
 function loadLiveStatus() {
-    const data = liveStatus;
+    const data = liveStatus; // or from fetch if using JSON
 
     document.getElementById('statusLocation').textContent = data.location;
     document.getElementById('statusSetup').textContent = data.status;
     document.getElementById('statusMessage').textContent = data.message;
 
     const indicator = document.getElementById('statusIndicator');
-    indicator.classList.remove('green', 'red', 'orange');
+    indicator.classList.remove('green', 'red', 'orange'); // clear all
 
     const status = data.status.toLowerCase();
 
@@ -282,13 +282,13 @@ function loadLiveStatus() {
         indicator.classList.add('red');
     }
 
-const lastUpdated = new Date(data.lastUpdated);
-const formattedTime = lastUpdated.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' });
-document.getElementById('statusLastUpdated').textContent = formattedTime;
+    const now = new Date(data.lastUpdated);
+    const formattedTime = lastUpdated.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' });
+    document.getElementById('statusLastUpdated').textContent = formattedTime;
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     loadLiveStatus();
-    // Add any additional initializations here
 });
 
 
