@@ -127,12 +127,43 @@ const products = [
         img: 'images/roundbunny.jpeg' 
     },
 ];
+
+document.addEventListener('DOMContentLoaded', () => {
+    showPage('home');
+    renderProducts(products);
+
+    // Set 'All' filter active by default
+    const allButton = document.querySelector('.filter-btn[onclick*="\'all\'"]');
+    if (allButton) {
+        allButton.classList.add('active-filter');
+    }
+});
+
+
 // Page switching
 function showPage(pageId) {
     document.querySelectorAll('.page').forEach(page => {
         page.style.display = 'none';
     });
     document.getElementById(pageId).style.display = 'block';
+
+    if (pageId !== 'home') {
+        // Leaving home → reset all filter highlights
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.classList.remove('active-filter');
+        });
+    } else {
+        // Returning to home → highlight 'All' by default
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.classList.remove('active-filter');
+        });
+        const allButton = document.querySelector('.filter-btn[onclick*="\'all\'"]');
+        if (allButton) {
+            allButton.classList.add('active-filter');
+        }
+        // Also re-render all products
+        renderProducts(products);
+    }
 }
 
 // Render products
@@ -186,7 +217,15 @@ function renderProducts(list) {
 }
 
 // Filter products
-function filterProducts(category) {
+function filterProducts(category, button) {
+    // Remove active class from all buttons
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active-filter');
+    });
+
+    // Add active class to the clicked button
+    button.classList.add('active-filter');
+
     if (category === 'all') {
         renderProducts(products);
     } else {
@@ -194,7 +233,6 @@ function filterProducts(category) {
         renderProducts(filtered);
     }
 }
-
 // Lightbox open
 function openLightbox(product) {
     const lightbox = document.getElementById('lightbox');
