@@ -151,6 +151,11 @@ nav a:hover {
     transition: background 0.3s, transform 0.2s;
 }
 
+.filter-btn.active-filter {
+    background: #ff9999;
+    color: white;
+}
+
 .filters button:hover {
     background: #ff9999;
     transform: scale(1.05);
