@@ -28,7 +28,7 @@ body {
 }
 
 a {
-    color: #4a7c59; /* deep earthy green */
+    color: #a94442; /* deep earthy green */
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s ease;
 }
@@ -174,7 +174,7 @@ nav {
 }
 
 nav a {
-    color: #4a7c59; /* deep earthy green */
+    color: #a94442; /* deep earthy green */
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s ease;
     font-weight: bold;
@@ -429,7 +429,7 @@ footer {
 }
 
 footer a {
-    color: #4a7c59; /* deep earthy green */
+    color: #a94442; /* deep earthy green */
     text-decoration: none;
     margin: 0 0.5rem;
     transition: color 0.3s ease, transform 0.2s ease;
