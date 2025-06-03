@@ -152,6 +152,32 @@ const products = [
     },
 ];
 
+// loading
+// Pick a random loader message before the loader exits
+
+const messages = [
+    "setting up the stand",
+    "unpacking trinkets and treasures",
+    "hanging up tiny earrings",
+    "putting out the buttons just right",
+    "smoothing the tablecloth",
+    "fluffing tote bags",
+    "clipping art prints to the display",
+    "lining up the sparkliest keychains",
+    "placing the last pin just so",
+    "testing the tiny bell (oops it still works!)",
+    "lighting the invisible fairy lights",
+];
+
+const chosen = messages[Math.floor(Math.random() * messages.length)];
+const loaderMsg = document.querySelector('.loader-message');
+if (loaderMsg) {
+  loaderMsg.innerHTML = `${chosen}<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>`;
+}
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     showPage('home');
     renderProducts(products);
@@ -162,6 +188,8 @@ document.addEventListener('DOMContentLoaded', () => {
         allButton.classList.add('active-filter');
     }
 });
+
+
 
 
 // Page switching
@@ -259,6 +287,7 @@ function filterProducts(category, button) {
 }
 // Lightbox open
 function openLightbox(product) {
+    
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightboxImage');
     const lightboxName = document.getElementById('lightboxName');
@@ -321,3 +350,5 @@ document.addEventListener('DOMContentLoaded', () => {
     showPage('home');
     renderProducts(products);
 });
+
+
