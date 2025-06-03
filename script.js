@@ -126,6 +126,30 @@ const products = [
         description: 'Circle stickers featuring the orginal bunny drawing. Waterproof and made in small batchs with a cricut.', 
         img: 'images/roundbunny.jpeg' 
     },
+
+    {
+        name: 'Bunny Circle Print', 
+        category: 'prints',
+        price: '$5', 
+        description: '8.5x11 inch print on white cardstock paper featuring the circle version of the orginal bunny print.', 
+        img: 'images/bunnyprint.jpeg' 
+    },
+
+    {
+        name: 'Greyhoundprint', 
+        category: 'prints',
+        price: '$3', 
+        description: '8.5x11 inch print on white cardstock paper featuring the greyhound print', 
+        img: 'images/greyhoundprint.jpeg' 
+    },
+
+    {
+        name: 'Fish Lino Print', 
+        category: 'prints',
+        price: '$3', 
+        description: '5.5x8.5 inch print on white cardstock paper featuring a handcut lino block print of sardines in a tin, using black lino block press ink.', 
+        img: 'images/fishprint.jpeg' 
+    },
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
