@@ -1,8 +1,8 @@
-const liveStatus = {
-     location: "Davis Street Market",
-     status: "Selling",
-     message: "I'm open! 🌸"
-     };
+//const liveStatus = {
+     //location: "Davis Street Market",
+     //status: "Selling",
+     //message: "I'm open! 🌸"
+     //};
 
 
 // const liveStatus = {
@@ -12,11 +12,11 @@ const liveStatus = {
 // };
 
 
-// const liveStatus = {
-//     location: "Davis Street Market",
-//     status: "Packing",
-//     message: "I'm wrapping up for the day. Thanks to everyone who stopped by! ❤️"
-// };
+const liveStatus = {
+     location: "Davis Street Market",
+     status: "Packing",
+     message: "I'm wrapping up for the day. Thanks to everyone who stopped by! ❤️"
+ };
 
 
 // const liveStatus = {
