@@ -12,11 +12,11 @@
 // };
 
 
-const liveStatus = {
-     location: "Davis Street Market",
-     status: "Packing",
-     message: "I'm wrapping up for the day. Thanks to everyone who stopped by! ❤️"
- };
+//const liveStatus = {
+     //location: "Davis Street Market",
+     //status: "Packing",
+     //message: "I'm wrapping up for the day. Thanks to everyone who stopped by! ❤️"
+ //};
 
 
 // const liveStatus = {
@@ -31,8 +31,8 @@ const liveStatus = {
 //     message: "I can't be at the market tomorrow due to weather or personal reasons — check back soon! 💛"
 // };
 
-//const liveStatus = {
-    //location: "Currently Closed",
-    //status: "Off",
-    //message: "Thanks for stopping by over the weekend! 🌻"
-//};
+const liveStatus = {
+    location: "Currently Closed",
+    status: "Off",
+    message: "Thanks for stopping by today! 🌻"
+};
