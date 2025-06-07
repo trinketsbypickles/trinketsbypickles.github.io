@@ -14,7 +14,7 @@
 
 //const liveStatus = {
      //location: "Davis Street Market",
-     //status: "Packing",
+     //status: "Packing up",
      //message: "I'm wrapping up for the day. Thanks to everyone who stopped by! ❤️"
  //};
 
