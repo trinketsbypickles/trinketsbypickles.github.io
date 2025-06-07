@@ -329,7 +329,7 @@ function loadLiveStatus() {
 
     if (status === 'selling' || status === 'open') {
         indicator.classList.add('green');
-    } else if (status === 'setting up' || status === 'setup') {
+    } else if (status === 'setting up' || status === 'packing up') {
         indicator.classList.add('orange');
     } else {
         indicator.classList.add('red');
