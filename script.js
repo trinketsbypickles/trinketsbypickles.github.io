@@ -146,7 +146,7 @@ const products = [
     {
         name: 'Fish Lino Print', 
         category: 'prints',
-        price: '$3', 
+        price: '$5', 
         description: '5.5x8.5 inch print on white cardstock paper featuring a handcut lino block print of sardines in a tin, using black lino block press ink.', 
         img: 'images/fishprint.jpeg' 
     },
