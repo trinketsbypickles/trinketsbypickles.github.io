@@ -1,8 +1,8 @@
-const liveStatus = {
-     location: "Davis Street Market",
-     status: "Selling",
-     message: "I'm open! 🌸"
-     };
+//const liveStatus = {
+     //location: "Davis Street Market",
+     //status: "Selling",
+     //message: "I'm open! 🌸"
+     //};
 
 
 // const liveStatus = {
@@ -31,8 +31,8 @@ const liveStatus = {
 //     message: "I can't be at the market tomorrow due to weather or personal reasons — check back soon! 💛"
 // };
 
-//const liveStatus = {
-    //location: "Currently Closed",
-    //status: "Off",
-    //message: "Thanks for stopping by over the weekend! 🌻"
-//};
+const liveStatus = {
+    location: "Currently Closed",
+    status: "Off",
+    message: "What a great day! Thanks for stopping by! 🌻"
+};
