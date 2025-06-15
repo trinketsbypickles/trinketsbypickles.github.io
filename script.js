@@ -34,6 +34,14 @@ const products = [
         description: 'My most popular stickers and first designs ever from when I used to sell on a TV dinner tray. They have changed a bit since the orginal prints and are now plain glossy. Waterproof and made in small batches with a cricut', 
         img: 'images/fishsticker.jpeg' 
     },
+
+        {
+        name: 'Bunny Pin', 
+        category: 'buttons',
+        price: '$2', 
+        description: '1.5 inch button pins featuring the bunny print!', 
+        img: 'images/bunnypins.JPG' 
+    },
     { 
         name: 'Fish Earrings', 
         category: 'charms',
