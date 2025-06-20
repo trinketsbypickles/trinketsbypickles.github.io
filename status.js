@@ -25,14 +25,14 @@
 //     message: "I'm off for the night but will be at the market tomorrow! Get excited 🌿"
 // };
 
-// const liveStatus = {
-//     location: "Home Studio",
-//     status: "Closed",
-//     message: "I can't be at the market tomorrow due to weather or personal reasons — check back soon! 💛"
-// };
+ const liveStatus = {
+     location: "Closed",
+     status: "Off",
+     message: "I will not be at the market this weekend! Taking a break to catch up on restocking! You can DM me on IG for any personal orders! 💛"
+ };
 
-const liveStatus = {
-    location: "Currently Closed",
-    status: "Off",
-    message: "What a great day! Thanks for stopping by! 🌻"
-};
+//const liveStatus = {
+    //location: "Currently Closed",
+    //status: "Off",
+   // message: "What a great day! Thanks for stopping by! 🌻"
+//};
