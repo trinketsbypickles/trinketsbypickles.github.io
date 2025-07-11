@@ -28,7 +28,7 @@
  const liveStatus = {
      location: "Closed",
      status: "Off",
-     message: "I will not be at the market this weekend! Taking a break to catch up on restocking! You can DM me on IG for any personal orders! 💛"
+     message: "Closed for the summer! Due to heat and small traffic at 3rd and B I will be taking a break! You can still DM for orders and pickups! Keep an eye out for some exciting new products and I'll see y'all on the first Saturday of September! 💛"
  };
 
 //const liveStatus = {
