@@ -1,15 +1,15 @@
-//const liveStatus = {
-     //location: "Davis Street Market",
-     //status: "Selling",
-     //message: "I'm open! 🌸"
-     //};
-
-
- const liveStatus = {
+const liveStatus = {
      location: "Davis Street Market",
-     status: "Setting up",
-     message: "I'm getting the booth ready! Almost open — hang tight 🌞"
- };
+     status: "Selling",
+     message: "I'm open! 🌸"
+     };
+
+
+ // const liveStatus = {
+     // location: "Davis Street Market",
+     // status: "Setting up",
+     // message: "I'm getting the booth ready! Almost open — hang tight 🌞"
+ // };
 
 
 //const liveStatus = {
