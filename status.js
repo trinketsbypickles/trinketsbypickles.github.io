@@ -1,8 +1,8 @@
-const liveStatus = {
-     location: "Davis Street Market",
-     status: "Selling",
-     message: "I'm open! 🌸"
-     };
+// const liveStatus = {
+     // location: "Davis Street Market",
+     // status: "Selling",
+     // message: "I'm open! 🌸"
+     // };
 
 
  // const liveStatus = {
@@ -31,8 +31,8 @@ const liveStatus = {
      // message: "Closed for the summer! Due to heat and small traffic at 3rd and B I will be taking a break! You can still DM for orders and pickups! Keep an eye out for some exciting new products and I'll see y'all on the first Saturday of September! 💛"
  // };
 
-//const liveStatus = {
-    //location: "Currently Closed",
-    //status: "Off",
-   // message: "What a great day! Thanks for stopping by! 🌻"
-//};
+const liveStatus = {
+    location: "Currently Closed",
+    status: "Off",
+    message: "What a great day! Thanks for stopping by! 🌻"
+};
