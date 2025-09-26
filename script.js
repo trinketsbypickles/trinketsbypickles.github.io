@@ -162,7 +162,7 @@ const products = [
         {
         name: 'Tiger Punch Needle Rug', 
         category: 'rug',
-        price: '$145', 
+        price: 'Not for sale currently', 
         description: 'Hand punch needle tufted rug. One of a kind and only made once!', 
         img: 'images/tigerrug.jpeg' 
     },
