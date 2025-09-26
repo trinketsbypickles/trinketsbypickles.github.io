@@ -158,6 +158,14 @@ const products = [
         description: '5.5x8.5 inch print on white cardstock paper featuring a handcut lino block print of sardines in a tin, using black lino block press ink.', 
         img: 'images/fishprint.jpeg' 
     },
+
+        {
+        name: 'Tiger Punch Needle Rug', 
+        category: 'rug',
+        price: '$145', 
+        description: 'Hand punch needle tufted rug. One of a kind and only made once!', 
+        img: 'images/tigerrug.jpeg' 
+    },
 ];
 
 // loading
